@@ -6,12 +6,18 @@ import android.content.Context;
 import android.app.admin.DevicePolicyManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.accessibility.AccessibilityEvent;
 
 public class VolumeAccessibilityService extends AccessibilityService {
 
     @Override
     protected void onServiceConnected() {
         Log.d("VolumeService", "Accessibility Service connected");
+    }
+
+    @Override
+    public void onAccessibilityEvent(AccessibilityEvent event) {
+        // Bắt buộc phải override, không cần xử lý
     }
 
     @Override
