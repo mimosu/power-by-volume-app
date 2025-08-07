@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PowerByVolume</string>
+    <string name="accessibility_service_description">Lock screen with volume button</string>
+</resources>
